@@ -21,7 +21,9 @@ function navigate(page: string) {
   //@ts-ignore
   const [source, context] = pages[page];
   const container = document.getElementById('app');
-  container.innerHTML = Handlebars.compile(source)(context);
+  if (container) {
+    container.innerHTML = Handlebars.compile(source)(context);
+  }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
