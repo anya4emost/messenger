@@ -3,8 +3,8 @@ import * as Components from './components';
 import * as Pages from './pages';
 
 const pages = {
-  'login': [Pages.LoginPage, { test: '123' } ],
-  'chats': [ Pages.ChatsPage ],
+  'login': [Pages.LoginPage],
+  'chats': [ Pages.ChatsPage, {chatName: 'Мама'} ],
   'nav': [Pages.NavigatePage],
   'registration': [Pages.RegistrationPage],
   'profile': [Pages.ProfilePage, { name: 'Анна', nikname: 'mikhanvl', phone: '8-985-234-12-34', birthday: '18.03.2004' }],
